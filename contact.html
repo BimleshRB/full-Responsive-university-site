@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"
+          ><img class="logo-img" src="img/Logo.png" alt="logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <ion-icon
+            name="close-outline"
+            class="close"
+            onclick="hideMenu()"
+          ></ion-icon>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="courses.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+          <span>
+            <ul>
+              <li>
+                <a class="last" href="">Help</a>
+              </li>
+            </ul>
+          </span>
+        </div>
+
+        <ion-icon
+          name="menu-outline"
+          class="bar"
+          onclick="showMenu()"
+        ></ion-icon>
+      </nav>
+      <h1>Contact us</h1>
+    </section>
+
+    <!-- contact us  -->
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1837543.8741812191!2d85.80700585!3d25.9039195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1680066079668!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <ion-icon name="home" class="fa"></ion-icon>
+            <span>
+              <h5>XYZ Road, ABC Buildings</h5>
+              <p>Patna, Bihar, India</p>
+            </span>
+          </div>
+          <div>
+            <ion-icon name="call" class="fa"></ion-icon>
+            <span>
+              <h5>+91 9234567898</h5>
+              <p>Monday to saturday, 10AM to 6PM</p>
+            </span>
+          </div>
+          <div>
+            <ion-icon name="mail" class="fa"></ion-icon>
+            <span>
+              <h5>info@gmail.com</h5>
+              <p>Email Us your Quary</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="formHandel.php" method="post">
+            <input name="name" type="text" placeholder="Enter Your name" required>
+            <input type="email" name="email"
+             placeholder="Enter email address" required>
+            <input type="text" name="subject" placeholder="Enter Your Subject" required>
+            <textarea rows="8" name="Message" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
+        ! Lorem ipsum dolor sit.
+      </p>
+      <div class="icons">
+        <ion-icon name="logo-facebook" class="fa"> </ion-icon>
+        <ion-icon name="logo-linkedin" class="fa"></ion-icon>
+        <ion-icon name="logo-twitter" class="fa"></ion-icon>
+        <ion-icon name="logo-instagram" class="fa"></ion-icon>
+      </div>
+    </section>
+
+    <!-- foot  -->
+
+    <section class="foot">
+      <p>All rights are reserved &copy; 2017</p>
+    </section>
+
+    <!-- ------javascript for toggle menu------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

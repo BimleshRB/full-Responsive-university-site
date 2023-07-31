@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"
+          ><img class="logo-img" src="img/Logo.png" alt="logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <ion-icon
+            name="close-outline"
+            class="close"
+            onclick="hideMenu()"
+          ></ion-icon>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="courses.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+          <span>
+            <ul>
+              <li>
+                <a class="last" href="">Help</a>
+              </li>
+            </ul>
+          </span>
+        </div>
+
+        <ion-icon
+          name="menu-outline"
+          class="bar"
+          onclick="showMenu()"
+        ></ion-icon>
+      </nav>
+      <h1>Our certificate & online programs for 2023</h1>
+    </section>
+
+    <section class="blog-section">
+      <div class="row">
+        <div class="blog-left">
+          <img src="img/R.jpg" alt="img" />
+          <h2>Our certificate & online programs for 2023</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid ipsum autem error mollitia quia, explicabo quasi animi deleniti assumenda sunt asperiores dolor perferendis accusantium ullam totam labore! Dolores omnis qui dolorum totam exercitationem officiis facere commodi. Modi, distinctio, eum quo error perferendis dolor ut iste atque incidunt magni quis saepe. <br> Eos, corrupti? Minus, suscipit! Omnis sunt odit consequuntur, aliquam voluptatibus incidunt necessitatibus unde quos, magnam dolore quibusdam magni repellat assumenda distinctio. Commodi architecto et adipisci quod laboriosam facere nihil magnam, voluptas suscipit cupiditate voluptates impedit saepe nemo distinctio nostrum ipsum ducimus accusamus? Rerum ut possimus fugiat, quidem saepe aperiam.</p>
+
+
+</div>
+
+
+        
+        <div class="blog-right">
+          <h3>Post Categories </h3>
+          <div>
+            <span> Business Analytic</span>
+            <span>21</span>
+          </div>
+          <div>
+            <span>Data Science</span>
+            <span>70</span>
+          </div>
+          <div>
+            <span>Web Developer</span>
+            <span>14</span>
+          </div>
+          <div>
+            <span>Backend Developer</span>
+            <span>20</span>
+          </div>
+          <div>
+            <span>Android Developer</span>
+            <span>30</span>
+          </div>
+          <div>
+            <span>Blockchain Developer</span>
+            <span>10</span>
+          </div>
+          <div>
+            <span>Fullstack Developer</span>
+            <span>22</span>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="comment-box">
+        <h3>Leave a comment</h3>
+        <form action="" class="comment-form">
+          <input type="text" placeholder="Enter your name">
+          <input type="email" placeholder="Enter your email">
+         <textarea  rows="4" placeholder="Leave yur comment"></textarea>
+         <div class="btn">
+         <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+        </div>
+        </form>
+     </section>
+
+     <!-- footer  -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
+        ! Lorem ipsum dolor sit.
+      </p>
+      <div class="icons">
+        <ion-icon name="logo-facebook" class="fa"> </ion-icon>
+        <ion-icon name="logo-linkedin" class="fa"></ion-icon>
+        <ion-icon name="logo-twitter" class="fa"></ion-icon>
+        <ion-icon name="logo-instagram" class="fa"></ion-icon>
+      </div>
+    </section>
+    <section class="foot">
+      <p>All rights are reserved &copy; 2017</p>
+    </section>
+
+    <!-- ------javascript for toggle menu------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
